@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2015 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -261,8 +261,5 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	camera2.portability.force_api=1
 
 # IO Scheduler
-+PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PROPERTY_OVERRIDES += \
 	sys.io.scheduler=bfq
-
-# Inherit proprietary blobs
-$(call inherit-product-if-exists, vendor/huawei/msm8916_32/msm8916_32-vendor.mk)
