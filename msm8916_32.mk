@@ -263,3 +263,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # IO Scheduler
 PRODUCT_PROPERTY_OVERRIDES += \
 	sys.io.scheduler=bfq
+
+# TWRP
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)twrp.fstab:recovery/root/etc/twrp.fstab \
+	bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata

@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, device/huawei/y550/aosp_y550.mk)
 
 # Inherit vendor
-$(call inherit-product, vendor/huawei/y550/msm8916_32-vendor.mk)
+$(call inherit-product, vendor/huawei/msm8916_32/msm8916_32-vendor.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/du/config/common_full_phone.mk)
